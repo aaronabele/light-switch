@@ -1,0 +1,42 @@
+html {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.body {
+  transition: 1s ease-in-out background-color;
+  background-color: lightgray;
+}
+
+/*background darkgrey*/
+.body-dark {
+  background-color: black;
+}
+
+/*default*/
+.btn {
+  font-size: 2rem;
+  border: 0.5rem solid black;
+  padding: 0.5rem 2rem;
+}
+
+/*button off*/
+.btn-off {
+  background-color: black;
+  color: #fff;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #bc13fe,
+    0 0 1px #bc13fe, 0 0 1px #bc13fe, 0 0 1px #bc13fe, 0 0 1px #bc13fe;
+  border-radius: 0.5rem solid #fff;
+  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 1rem #bc13fe,
+    0 0 0.1rem #bc13fe, 0 0 1.5rem #bc13fe, inset 0 0 0.5rem #bc13fe;
+}
