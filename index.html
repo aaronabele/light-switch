@@ -24,12 +24,12 @@
         data() {
           return {
             dark: false,
-            bodyDark: false,
           };
         },
         methods: {
           toggleLightSwitch() {
             this.dark = !this.dark;
+            document.body.classList.toggle("body-dark");
           },
         },
       }).mount("#app");
