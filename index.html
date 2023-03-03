@@ -8,7 +8,31 @@
     <title>Light Switch</title>
   </head>
   <body class="body">
-    <button class="btn">Toggle Light</button>
+    <div id="app">
+      <button
+        class="btn"
+        @click="toggleLightSwitch"
+        :class="dark ? 'btn-off'  : 'btn'"
+      >
+        Toggle Light
+      </button>
+    </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+      const app = Vue.createApp({
+        data() {
+          return {
+            dark: false,
+            bodyDark: false,
+          };
+        },
+        methods: {
+          toggleLightSwitch() {
+            this.dark = !this.dark;
+          },
+        },
+      }).mount("#app");
+    </script>
   </body>
 </html>

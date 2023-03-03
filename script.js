@@ -1,4 +1,4 @@
-let dark = false;
+/*let dark = false;
 
 const btn = document.querySelector("button");
 
@@ -13,4 +13,4 @@ btn.addEventListener("click", function (e) {
     btn.classList.remove("btn-off");
     document.title = "Good Morning";
   }
-});
+});*/
